@@ -47,15 +47,15 @@
 .features h1,h3,p{
 	text-align: center;
 }
-.image-features img{
+.image-prop img{
 	display: block;
 	margin:auto;
 }
-.image-features h4{
+.image-prop h4{
 	text-align: center;
+	margin-bottom: 50px;
+	overflow: auto;
 }
-
-
 /*dropdown starts*/
 /* Dropdown Button */
 .dropbtn {
@@ -130,6 +130,13 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.features-grid{
+	margin-bottom: 20px;
+}
+.features-grid .fa {
+    font-size: 6em;
+    color: #959595
 }
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";

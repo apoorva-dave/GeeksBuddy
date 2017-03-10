@@ -1,5 +1,4 @@
 <footer>	
-	<div class="footer container-fluid">
 		<div class="upper-footer container">
 			<ul>
 				<li><a href="<?php echo base_url() ?>">Home</a></li>
@@ -25,5 +24,5 @@
 		<div class="copyright-text container">
 			<p class="text-center">&copy; GeeksBuddy <?php echo date('Y') ?>. All Rights Reserved. Site designed and maintained by aaak.</p>
 		</div>
-	</div>	
+	
 </footer>
