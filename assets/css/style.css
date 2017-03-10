@@ -1,0 +1,136 @@
+/*Navbar Modifications*/
+.navbar-brand>img {
+    height: 50px;
+}
+.navbar-brand{
+	padding: 0px;
+}
+.navbar-default{
+	background-color: #fff;
+}
+.navbar-right
+{
+	height: 70px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.navbar-brand>img {
+    height: 90px;
+}
+/*Default Styles*/
+.background{
+	background-color: #54667A;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+.text-center{
+	text-align: center;
+}
+.text-font{
+	font-family: "Times New Roman";
+	font-style: italic;
+}
+.body-wrapper{
+	min-height: 64vh;
+	overflow: auto;
+}
+.features{
+	margin-left: 20px;
+	margin:auto;
+	padding: 30px;
+}
+.features h1,h3,p{
+	text-align: center;
+}
+.image-features img{
+	display: block;
+	margin:auto;
+}
+.image-features h4{
+	text-align: center;
+}
+
+
+/*dropdown starts*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*footer starts*/
+
+ .upper-footer ul
+ {
+	list-style: none;
+	text-align:center;
+ }
+
+ .upper-footer li a{
+	color: black;
+	list-style: none;
+ }
+
+ .upper-footer li
+ {
+	display: inline-block;
+	padding: 10px;
+	list-style: none;
+ }
+ .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
