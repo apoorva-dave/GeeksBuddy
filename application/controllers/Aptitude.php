@@ -20,6 +20,6 @@ class Aptitude extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('aptitude');
+		$this->load->view('aptitude/aptitude');
 	}
 }
