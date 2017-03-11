@@ -209,7 +209,12 @@ li.header-tabs > a{
     -moz-osx-font-smoothing: grayscale;
 }
 .features-grid{
-	margin-bottom: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+.features-grid h2{
+	margin-bottom: 50px;
 }
 .features-grid .fa {
     font-size: 6em;

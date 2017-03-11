@@ -25,7 +25,7 @@
 		</div>
 		<!-- Hero Section Ends -->
 		
-		<div class="image-prop">
+		<!-- <div class="image-prop">
 			<div class="col-md-6">
 				<a href="<?php echo base_url()?>index.php/Aptitude"><img src="<?php echo base_url()?>assets/images/apti.png" alt=""></a>';
 				<h4>Aptitude Questions</h4>
@@ -34,9 +34,10 @@
 				<a href="<?php echo base_url() ?>index.php/Coding"><img src="<?php echo base_url()?>assets/images/code.jpg" alt=""></a>';
 				<h4>Coding Questions</h4>
 			</div>
-		</div>
+		</div> -->
 	
 		<div class="features-grid text-center">
+		<h2>Why Us?</h2>
 			<div class="col-md-4">
 				<i class="fa fa-book" aria-hidden="true"></i>
 				<h4>Online Tests</h4>
