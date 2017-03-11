@@ -9,12 +9,12 @@
 <body>
 	<?php include __DIR__."/../includes/header.php" ?>
 	<div class="container">
-	<div class="panel panel-info">
+	<div class="panel question-categories panel-success">
 		<div class="panel-heading">
 	    	<h3 class="panel-title">Aptitude Questions</h3>
 	  	</div>
   		<div class="panel-body">
-    		<div class="question-categories">
+    		<div>
 			<h4>Quantitative Aptitude</h4>
 			<ul>
 				<div class="col-md-4">
@@ -69,12 +69,12 @@
 		</div>
 	</div>
 	</div>
-	<div class="panel panel-info">
+	<div class="panel question-categories panel-success">
 		<div class="panel-heading">
 	    	<h3 class="panel-title">Coding Questions</h3>
 	  	</div>
   		<div class="panel-body">
-			<div class="question-categories">
+			<div>
 				<ul>
 					<li><a href="#">Arrays</a></li>
 					<li><a href="#">Linked Lists</a></li>

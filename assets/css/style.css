@@ -19,6 +19,13 @@
     margin-bottom: 0
 }
 /*navbar modifications end*/
+/*Bootstrap Modifications*/
+.panel-success>.panel-heading {
+    background-color: #35a039;
+    color: #fff;
+   }
+/*Bootstrap Modifications End*/
+
 
 /*Default Styles*/
 .background{
@@ -57,52 +64,22 @@
     transition: all .5s ease;
 }
 /*Default Styles end*/
-/*Hero Section*/
-.hero-section{
-	margin:auto;
-	padding: 0;
-    position: relative;
-    height: 75vh;
-    overflow: hidden;
+/*Header Section starts*/
+.header-tabs{
+	background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid #35a039;
+    height: 54px;
 }
-.hero-section img{
-    width: 100%;
-    z-index: -1;
-}
-.img-overlay{
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.44);
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-}
-.hero-text{
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    top: 0;
-    left: 50%;
-    user-select: none;
-    cursor: default;
-    top: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-}
-
-.hero-buttons{
-    margin-top: 30px;
-}
-/*Hero Section Ends*/
-
-.image-prop img{
-	display: block;
-	margin:auto;
-}
-.image-prop h4{
-	text-align: center;
-	margin-bottom: 50px;
-	overflow: auto;
+/*Kar dun?*/
+li.header-tabs > a{
+	padding :0 !important;
+	color: #fff !important; 
+	/*Do not write white :| */
 }
 /*dropdown starts*/
 /* Dropdown Button */
@@ -154,6 +131,56 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+/*Header section ends*/
+/*Hero Section*/
+.hero-section{
+	margin:auto;
+	padding: 0;
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+}
+.hero-section img{
+    width: 100%;
+    z-index: -1;
+}
+.img-overlay{
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.44);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+.hero-text{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    user-select: none;
+    cursor: default;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.hero-buttons{
+    margin-top: 30px;
+}
+/*Hero Section Ends*/
+
+.image-prop img{
+	display: block;
+	margin:auto;
+	margin-top: 20px;
+}
+.image-prop h4{
+	text-align: center;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
 /*footer starts*/
 
  .upper-footer ul
@@ -191,6 +218,10 @@
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
 }
+/*Question Categories section starts*/
+.question-categories{
+	margin-top: 20px;
+}
 .question-categories ul{
 	overflow: auto;
 }
@@ -202,5 +233,5 @@
 }
 .question-categories h4{
 	margin-top: 20px;
-	color: #387492;
-}
+	color: #38923b;}
+/*Question Categories section ends*/

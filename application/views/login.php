@@ -36,7 +36,9 @@
 				</div>	
 		   </form>
 		   <br>
+		   <div class="text-center">
 		   <p>Need an account?<a href="#"> Register</p>
+		   </div>
 	  </div>
 	</div>
 </div>	
