@@ -27,6 +27,7 @@
 	<div class="container">
 		<div class="features-grid text-center">
 			<h2>Why Us?</h2>
+			<hr>
 			<div class="col-md-4">
 				<i class="fa fa-book" aria-hidden="true"></i>
 				<h4>Online Tests</h4>
@@ -56,20 +57,20 @@
 		</div>
 	</div>
 	<div class="container text-center">
-		<div class="row">
+		<div class="row tricol">
 			<div class="col-md-4">
 			<div class="panel panel-success">
 			  <div class="panel-heading"><h4>Companies</h4></div>
 	  				<div class="panel-body">
 						<div class="tricol-body">
 							<ul>
-								<li><a href="#">Oracle</a></li>
-								<li><a href="#">UHG</a></li>
-								<li><a href="#">CA Technologies</a></li>
-								<li><a href="#">MU Sigma</a></li>
-								<li><a href="#">Capegemini</a></li>
-								<li><a href="#">Adobe</a></li>
-								<li><a href="#">Sapient</a></li>
+								<a href="#"><li>Oracle</li></a>
+								<a href="#"><li>UHG</li></a>
+								<a href="#"><li>CA Technologies</li></a>
+								<a href="#"><li>MU Sigma</li></a>
+								<a href="#"><li>Capegemini</li></a>
+								<a href="#"><li>Adobe</li></a>
+								<a href="#"><li>Sapient</li></a>
 
 							</ul>
 						</div>
@@ -82,27 +83,27 @@
   				<div class="panel-body">
 					<div class="tricol-body">
 						<ul>
-							<li><a href="#">Number System</a></li>
-							<li><a href="#">Speed and Distance</a></li>
-							<li><a href="#">Boats and Streams</a></li>
-							<li><a href="#">Profit and Loss</a></li>
-							<li><a href="#">Averages and Mixtures</a></li>
-							<li><a href="#">Ratio and Proportion</a></li>
-							<li><a href="#">Simple and Compund Interest</a></li>
-							<li><a href="#">Height and Distance</a></li>
-							<li><a href="#">Probability</a></li>
-							<li><a href="#">Grammar</li>
-							<li><a href="#">Synonyms and Antonyms</a></li>
-							<li><a href="#">Error Correction</a></li>
-							<li><a href="#">Idioms and Phrases</a></li>
-							<li><a href="#">Comprehension</a></li>
-							<li><a href="#">Fill in the blanks</a></li>
-							<li><a href="#">Cubes and Dices</li>
-							<li><a href="#">Puzzles</a></li>
-							<li><a href="#">Direction and Senses</a></li>
-							<li><a href="#">Statements and Assumptions</a></li>
-							<li><a href="#">Logical Deductions</a></li>
-							<li><a href="#">Blood Relations</a></li>
+							<a href="#"><li>Number System</li></a>
+							<a href="#"><li>Speed and Distance</li></a>
+							<a href="#"><li>Boats and Streams</li></a>
+							<a href="#"><li>Profit and Loss</li></a>
+							<a href="#"><li>Averages and Mixtures</li></a>
+							<a href="#"><li>Ratio and Proportion</li></a>
+							<a href="#"><li>Simple and Compund Interest</li></a>
+							<a href="#"><li>Height and Distance</li></a>
+							<a href="#"><li>Probability</li></a>
+							<a href="#"><li>Grammar</li>
+							<a href="#"><li>Synonyms and Antonyms</li></a>
+							<a href="#"><li>Error Correction</li></a>
+							<a href="#"><li>Idioms and Phrases</li></a>
+							<a href="#"><li>Comprehension</li></a>
+							<a href="#"><li>Fill in the blanks</li></a>
+							<a href="#"><li>Cubes and Dices</li></a>
+							<a href="#"><li>Puzzles</li></a>
+							<a href="#"><li>Direction and Senses</li></a>
+							<a href="#"><li>Statements and Assumptions</li></a>
+							<a href="#"><li>Logical Deductions</li></a>
+							<a href="#"><li>Blood Relations</li></a>
 						</ul>
 					</div>
 				</div>
@@ -114,12 +115,12 @@
   				<div class="panel-body">
 					<div class="tricol-body">
 						<ul>
-							<li><a href="#">Arrays</a></li>
-							<li><a href="#">Linked Lists</a></li>
-							<li><a href="#">Strings</a></li>
-							<li><a href="#">Trees</a></li>
-							<li><a href="#">Stacks and Queues</a></li>
-							<li><a href="#">Miscellaneous</a></li>
+							<a href="#"><li>Arrays</li></a>
+							<a href="#"><li>Linked Lists</li></a>
+							<a href="#"><li>Strings</li></a>
+							<a href="#"><li>Trees</li></a>
+							<a href="#"><li>Stacks and Queues</li></a>
+							<a href="#"><li>Miscellaneous</li></a>
 						</ul>
 					</div>
 				</div>

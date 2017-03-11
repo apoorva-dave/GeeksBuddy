@@ -209,17 +209,34 @@ li.header-tabs > a{
     -moz-osx-font-smoothing: grayscale;
 }
 .features-grid{
-	margin-top: 50px;
-	margin-bottom: 50px;
 	overflow: auto;
 }
 .features-grid h2{
+    margin-top: 40px;
+}
+.features-grid hr{
 	margin-bottom: 50px;
+}
+.features-grid > div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    user-select: none;
+    cursor: default;
 }
 .features-grid .fa {
     font-size: 6em;
-    color: #959595
+    color: #959595;
+    position: relative;
+    transition: .5s ease all;
 }
+
+.features-grid > div:hover .fa{
+    color: #000;
+    transition: .5s ease all;
+    top: -10px;
+    font-size: 5em;
+}
+
 .features-grid li{
 	list-style: none;
 }
@@ -245,17 +262,29 @@ li.header-tabs > a{
 /*Question Categories section ends*/
 
 /*Tri Columnar Section starts*/
+.tricol .panel-body{
+    padding: 0;
+}
+.tricol-body {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.tricol-body ul{
+    padding: 0;
+}
 
 .tricol-body li{
 	list-style: none;
+    padding: 10px;
+    border-top: 1px solid #e4e4e4;
 }
-.tricol-body {
-    height: 150px;
-    overflow-y: scroll;
+.tricol-body li:hover{
+    background-color: #e4e4e4;
 }
-.tricol-body li{
-	margin-bottom: 10px;
+.tricol-body a{
+    color:#000;
 }
-.tricol-body li a{
-color:#134d69;
+.tricol-body a:hover{
+    text-decoration: none;
 }
