@@ -141,3 +141,16 @@
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
 }
+.question-categories ul{
+	overflow: auto;
+}
+.question-categories li{
+	list-style: none;
+}
+.question-categories li a{
+	color:#134d69;
+}
+.question-categories h4{
+	margin-top: 20px;
+	color: #387492;
+}
