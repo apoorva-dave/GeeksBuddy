@@ -9,14 +9,22 @@
 <body>
 	<?php include "includes/header.php" ?>
 	<div id="container-fluid">
-		<div class="features">
+		<!-- Hero Section -->
+		<div class="hero-section">
 			<img src="<?php echo base_url()?>assets/images/rsz_131.jpg" alt="">
-			<h1>Welcome to GeeksBuddy!</h1>
-			<br>
-			<br>
-			<h3>Best Exam Preparation for you!</h3>
-			<p>Boost your placement exam preparation with GeeksBuddy to get the best jobs in India.</p>
+			<div class="img-overlay"></div>
+			<div class="hero-text">
+				<h1>Welcome to GeeksBuddy!</h1>
+				<h3>Best Exam Preparation for you!</h3>
+				<p>Boost your placement exam preparation with GeeksBuddy to get the best jobs in India.</p>
+				<div class="hero-buttons">
+					<a class="btn btn-sharp" href="">Aptitude Questions</a>
+					<a class="btn btn-sharp" href="">Coding Questions</a>
+				</div>
+			</div>
 		</div>
+		<!-- Hero Section Ends -->
+		
 		<div class="image-prop">
 			<div class="col-md-6">
 				<a href="<?php echo base_url()?>index.php/Aptitude"><img src="<?php echo base_url()?>assets/images/apti.png" alt=""></a>';

@@ -15,6 +15,11 @@
 .navbar-brand>img {
     height: 90px;
 }
+.navbar{
+    margin-bottom: 0
+}
+/*navbar modifications end*/
+
 /*Default Styles*/
 .background{
 	background-color: #54667A;
@@ -37,14 +42,59 @@
 	min-height: 64vh;
 	overflow: auto;
 }
-.features{
-	margin-left: 20px;
+.btn-sharp{
+    border-radius: 0;
+    background-color: transparent;
+    border :1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease;
+    padding: 8px 20px;
+}
+.btn-sharp:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .5s ease;
+}
+/*Default Styles end*/
+/*Hero Section*/
+.hero-section{
 	margin:auto;
-	padding: 30px;
+	padding: 0;
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
 }
-.features h1,h3,p{
-	text-align: center;
+.hero-section img{
+    width: 100%;
+    z-index: -1;
 }
+.img-overlay{
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.44);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+.hero-text{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    user-select: none;
+    cursor: default;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.hero-buttons{
+    margin-top: 30px;
+}
+/*Hero Section Ends*/
+
 .image-prop img{
 	display: block;
 	margin:auto;
@@ -79,7 +129,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
 }
 
 /* Links inside the dropdown */
