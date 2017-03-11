@@ -3,20 +3,28 @@
 <script type="assets/css/style.css"></script>
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
+	<title>Register</title>
 </head>
 <body>
 <?php include "css.php" ?>
 <?php include "includes/header.php" ?>
 <div class="container">
 	<div class="text-center">
-	<h3>Login to GeeksBuddy</h3>
+	<h3>Register at GeeksBuddy</h3>
 	</div>
 	<br>
 	<br>
 	<div class="panel panel-default">
 	 	<div class="panel-body">
 	 	    <form class="form-horizontal">
+	 	    	<div class="form-group">
+				<br>
+				
+					<label for="name" class="control-label col-xs-4">Name:</label>
+					 <div class="col-xs-5">
+						<input type="text" class="form-control" id="name" placeholder="Enter Name"></div>
+				</div>
+		
 				<div class="form-group">
 				<br>
 				
@@ -25,21 +33,20 @@
 						<input type="email" class="form-control" id="email" placeholder="Enter Email address"></div>
 				</div>
 				<br>
-
+				
 				<div class="form-group">
 					<label for="pwd" class="control-label col-xs-4">Password:</label>
 					 <div class="col-xs-5">
 						<input type="password" class="form-control" id="pwd" placeholder="Password"></div>
 				</div>
 				<div class="text-center">
-					<button class ="btn btn-primary" type="submit" class="btn btn-default">Login</button>
+					<button class ="btn btn-primary" type="submit" class="btn btn-default">Sign In</button>
+					<br><br>
+					<p>Already a user? Click here to <a href="<?php echo base_url()?>index.php/Login">Login.</p>
 				</div>	
 		   </form>
 		   <br>
-		   <div class="text-center">
-		   <p>Need an account?<a href="<?php echo base_url()?>index.php/Register"> Register</p>
-		   </div>
-	  </div>
+		 </div>
 	</div>
 </div>	
 

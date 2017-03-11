@@ -41,7 +41,7 @@
           </div>
         </li>
         <li class="header-tabs"><a href="<?php echo base_url() ?>index.php/Login">Login</a></li>
-        <li class="header-tabs"><a href="#">Register</a></li>
+        <li class="header-tabs"><a href="<?php echo base_url()?>index.php/Register"> Register</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
