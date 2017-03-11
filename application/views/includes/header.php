@@ -20,11 +20,14 @@
           <div class="dropdown">
             <button class="dropbtn">Company Wise</button>
             <div class="dropdown-content">
-            <a href="#">UHG</a>
-            <a href="#">Oracle</a>
-            <a href="#">CA</a>
-            <a href="#">Mu Sigma</a>
-            <a href="#">Capegemini</a>
+                <a href="#">Oracle</a>
+                <a href="#">UHG</a>
+                <a href="#">CA Technologies</a>
+                <a href="#">MU Sigma</a>
+                <a href="#">Capegemini</a>
+                <a href="#">Adobe</a>
+                <a href="#">Sapient</a>
+
             </div>
           </div>
         </li>
@@ -33,7 +36,7 @@
             <button class="dropbtn">Topic Wise</button>
             <div class="dropdown-content">
             <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude</a>
-            <a href="<?php echo base_url()?>index.php/Coding">Coding</a>
+            <a href="<?php echo base_url()?>index.php/Aptitude">Coding</a>
             </div>
           </div>
         </li>

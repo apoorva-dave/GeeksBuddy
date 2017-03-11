@@ -220,6 +220,9 @@ li.header-tabs > a{
     font-size: 6em;
     color: #959595
 }
+.features-grid li{
+	list-style: none;
+}
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
 }
@@ -240,3 +243,19 @@ li.header-tabs > a{
 	margin-top: 20px;
 	color: #38923b;}
 /*Question Categories section ends*/
+
+/*Tri Columnar Section starts*/
+
+.tricol-body li{
+	list-style: none;
+}
+.tricol-body {
+    height: 150px;
+    overflow-y: scroll;
+}
+.tricol-body li{
+	margin-bottom: 10px;
+}
+.tricol-body li a{
+color:#134d69;
+}
