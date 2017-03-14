@@ -6,8 +6,8 @@
 	<title>Register</title>
 </head>
 <body>
-<?php include "css.php" ?>
-<?php include "includes/header.php" ?>
+<?php include __DIR__."/../css.php" ?>
+<?php include __DIR__."/../includes/header.php" ?>
 <div class="container">
 	<div class="text-center">
 	<h3>Register at GeeksBuddy</h3>
@@ -16,13 +16,13 @@
 	<br>
 	<div class="panel panel-default">
 	 	<div class="panel-body">
-	 	    <form class="form-horizontal">
+	 	    <form class="form-horizontal" method="post"action= "<?php echo base_url() ?>index.php/register/registerSubmit">
 	 	    	<div class="form-group">
 				<br>
 				
 					<label for="name" class="control-label col-xs-4">Name:</label>
 					 <div class="col-xs-5">
-						<input type="text" class="form-control" id="name" placeholder="Enter Name"></div>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter Name"></div>
 				</div>
 		
 				<div class="form-group">
@@ -30,14 +30,14 @@
 				
 					<label for="email" class="control-label col-xs-4">Email address:</label>
 					 <div class="col-xs-5">
-						<input type="email" class="form-control" id="email" placeholder="Enter Email address"></div>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email address"></div>
 				</div>
 				<br>
 				
 				<div class="form-group">
 					<label for="pwd" class="control-label col-xs-4">Password:</label>
 					 <div class="col-xs-5">
-						<input type="password" class="form-control" id="pwd" placeholder="Password"></div>
+						<input type="password" class="form-control" id="pwd" name="password" placeholder="Password"></div>
 				</div>
 				<div class="text-center">
 					<button class ="btn btn-primary" type="submit" class="btn btn-default">Sign In</button>
@@ -50,7 +50,7 @@
 	</div>
 </div>	
 
-<?php include "includes/footer.php" ?>
+<?php include  __DIR__."/../includes/footer.php" ?>
 
 </body>
 </html>

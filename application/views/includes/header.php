@@ -33,10 +33,9 @@
         </li>
         <li>
           <div class="dropdown">
-            <button class="dropbtn">Topic Wise</button>
+            <button class="dropbtn">Questions</button>
             <div class="dropdown-content">
-            <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude</a>
-            <a href="<?php echo base_url()?>index.php/Aptitude">Coding</a>
+            <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude & Coding</a>
             </div>
           </div>
         </li>

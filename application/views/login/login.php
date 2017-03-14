@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="assets/css/style.css"></script>
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
 </head>
 <body>
-<?php include "css.php" ?>
-<?php include "includes/header.php" ?>
+ <?php include __DIR__."/../css.php" ?>
+<?php include __DIR__."/../includes/header.php" ?>
 <div class="container">
 	<div class="text-center">
 	<h3>Login to GeeksBuddy</h3>
@@ -16,7 +15,7 @@
 	<br>
 	<div class="panel panel-default">
 	 	<div class="panel-body">
-	 	    <form class="form-horizontal">
+	 	    <form class="form-horizontal"  method="post" action="<?php echo base_url() ?>index.php/login/loginSubmit">
 				<div class="form-group">
 				<br>
 				
@@ -42,8 +41,6 @@
 	  </div>
 	</div>
 </div>	
-
-<?php include "includes/footer.php" ?>
-
+<?php include  __DIR__."/../includes/footer.php" ?>  
 </body>
 </html>
