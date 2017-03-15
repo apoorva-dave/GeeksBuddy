@@ -22,7 +22,7 @@ public function index()
 		$data['per_page'] = $this->per_page;
 		$data['category_name'] = $this->Model_questions->getCategoryName($category_slug);
 		$data['category_slug'] = $category_slug;
-
+		$data['page'] = $page; 
 		$this->load->view('questions/view', $data);
 		$this->load->library('pagination');
 

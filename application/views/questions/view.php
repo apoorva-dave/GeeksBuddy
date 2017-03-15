@@ -40,23 +40,27 @@
 		</ul>	
 		<nav aria-label="Page navigation">
 		  <ul class="pagination">
-		    <li>
-		      <a href="#" aria-label="Previous">
-		        <span aria-hidden="true">&laquo;</span>
-		      </a>
-		    </li>
-		    <?php for ($i=1; $i <= $no_of_pages; $i++) { ?>
+		  <?php if($page - 1 > 0) {?>
+			    <li>
+			      <a href="<?php echo base_url() ?>Questions/view/<?php echo $category_slug ?>/<?php echo $page-1 ?>" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+	   		<?php }?>
+		  	    <?php for ($i=1; $i <= $no_of_pages; $i++) { ?>
 			    <li>
 			    	<a href="<?php echo base_url() ?>Questions/view/<?php echo $category_slug ?>/<?php echo $i ?>">
 			    <?php echo $i ?>
 			    	
 			    </a></li>
 		    <?php } ?>
-		    <li>
-		      <a href="#" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
-		      </a>
-		    </li>
+		    <?php if($page + 1 <= $no_of_pages) {?>
+			    <li>
+			      <a href="<?php echo base_url() ?>Questions/view/<?php echo $category_slug ?>/<?php echo $page+1 ?>" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+	   		<?php }?>
 		  </ul>
 		</nav>
 	</div>
