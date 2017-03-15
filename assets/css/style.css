@@ -337,3 +337,8 @@ li.header-tabs > a{
     margin: 7px;
 }
 /*Take Test Page Ends*/
+
+
+.view-companies li,h3{
+    margin-bottom: 20px;
+}

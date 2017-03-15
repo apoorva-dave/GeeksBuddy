@@ -38,8 +38,8 @@
 			<?php
 			} ?>
 		</ul>	
-		<nav aria-label="Page navigation">
-		  <ul class="pagination">
+		<nav aria-label="Page navigation" class="text-center">
+		  <ul class="pagination ">
 		  <?php if($page - 1 > 0) {?>
 			    <li>
 			      <a href="<?php echo base_url() ?>Questions/view/<?php echo $category_slug ?>/<?php echo $page-1 ?>" aria-label="Previous">
