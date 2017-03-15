@@ -33,15 +33,20 @@
         </li>
         <li>
           <div class="dropdown">
-            <button class="dropbtn">Topic Wise</button>
+            <button class="dropbtn">Questions</button>
             <div class="dropdown-content">
-            <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude</a>
-            <a href="<?php echo base_url()?>index.php/Aptitude">Coding</a>
+            <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude &amp; Coding</a>
             </div>
           </div>
         </li>
-        <li class="header-tabs"><a href="<?php echo base_url() ?>index.php/Login">Login</a></li>
-        <li class="header-tabs"><a href="<?php echo base_url()?>index.php/Register"> Register</a></li>
+        <?php if (!($this->session->userdata('is_logged_in'))) { ?>
+          <li class="header-tabs"><a href="<?php echo base_url() ?>index.php/Login">Login</a></li>
+          <li class="header-tabs"><a href="<?php echo base_url()?>index.php/Register"> Register</a></li>
+        <?php } ?>
+
+        <?php if ($this->session->userdata('is_logged_in')) { ?>
+          <li class="header-tabs action="<?php echo base_url()?>index.php/login/logout"><a href="<?php echo base_url()?>index.php/Login/logout"> Logout</a></li>
+        <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

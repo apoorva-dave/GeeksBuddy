@@ -20,6 +20,52 @@ class Login extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('login/login');
+	}
+	public function loginSubmit()
+	{
+		// var_dump($_POST);
+		// die();
+		// Ye hui apni form validation library
+		$this->load->library('session');
+		$this->load->library('form_validation');
+		
+		// Form validation Rules
+		$this->form_validation->set_rules('password','Password','required|trim');
+		$this->form_validation->set_rules('email','Email','required|trim|valid_email');
+		//  Agar from validation successfulyy ho jaa rha toh..
+		if ($this->form_validation->run()) {
+
+			// ye model bna hai?
+			$this->load->model('Model_users');
+			
+			 // var_dump($this->input->post('password'));
+			 // var_dump($this->input->post('email'));
+
+			$email = $this->input->post('email');
+			$password = $this->input->post('password');
+				$data  = array(
+				'email' => $email,
+				'password' => $password,
+				);
+			if($this->Model_users->isValidPassword($email, $password)){
+				//var_dump($data);
+				$this->session->set_userdata('is_logged_in', $email);
+				
+				$this->load->view('aptitude/aptitude');
+			}else{
+				
+				$data['error_msg'] = "You have entered wrong Email/password!";
+				$this->load->view('login/login', $data);	
+			}
+		}else{
+				$data['errors'] = validation_errors(); 
+				 $this->load->view('login/login', $data);	
+		}
+	}
+	public function logout()
+	{
+		$this->session->set_userdata('is_logged_in', null);
+		redirect('login');
 	}
 }
