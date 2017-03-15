@@ -20,13 +20,11 @@
           <div class="dropdown">
             <button class="dropbtn">Company Wise</button>
             <div class="dropdown-content">
-                <a href="#">Oracle</a>
-                <a href="#">UHG</a>
+                <a href="<?php echo base_url() ?>/questions/company/algebraic-expressions">Oracle</a>
+                <a href="<?php echo base_url() ?>/questions/company/speed-and-boat">UHG</a>
                 <a href="#">CA Technologies</a>
-                <a href="#">MU Sigma</a>
-                <a href="#">Capegemini</a>
-                <a href="#">Adobe</a>
-                <a href="#">Sapient</a>
+                <a href="<?php echo base_url() ?>/ViewCompanies">View-All</a>
+                
 
             </div>
           </div>
