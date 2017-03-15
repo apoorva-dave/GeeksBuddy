@@ -23,7 +23,7 @@
 								<div class="col-md-6 q-text">
 									<a href="<?php echo base_url() ?>index.php/Tests/view/algebraic-expressions">Algebra</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -49,7 +49,7 @@
 								<div class="col-md-6 q-text">
 									<a href="<?php echo base_url() ?>index.php/Tests/view/speed-and-boat">Speed and Distance</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -75,7 +75,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Boats and Streams</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -101,7 +101,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Profit and Loss</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -127,7 +127,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Averages and Mixtures</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -153,7 +153,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Ratio and Proportion</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -179,7 +179,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Simple and Compund Interest</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -205,7 +205,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Height and Distance</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -231,7 +231,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Probability</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -261,7 +261,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Grammar</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -287,7 +287,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Synonyms and Antonyms</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -313,7 +313,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Error Correction</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -339,7 +339,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Idioms and Phrases</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -365,7 +365,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Comprehension</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -391,7 +391,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Fill in the blanks</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -421,7 +421,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Cubes and Dices
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -447,7 +447,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Puzzles</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -473,7 +473,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Direction and Senses</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -499,7 +499,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Statements and Assumptions</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -525,7 +525,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Logical Deductions</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -551,7 +551,7 @@
 								<div class="col-md-6 q-text">
 									<a href="#">Blood Relations</a>
 								</div>
-								<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+								<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 									<div class="col-md-6">
 										<div class="time">
 											<span>Time:</span>
@@ -589,7 +589,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Arrays</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
@@ -615,7 +615,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Linked Lists</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
@@ -641,7 +641,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Strings</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
@@ -667,7 +667,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Trees</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
@@ -693,7 +693,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Stacks and Queues</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
@@ -719,7 +719,7 @@
 							<div class="col-md-6 q-text">
 								<a href="#">Miscellaneous</a>
 							</div>
-							<form action="<?php echo base_url() ?>test/start/algebraic-expressions">
+							<form action="<?php echo base_url() ?>test/instructions/algebraic-expressions">
 								<div class="col-md-6">
 									<div class="time">
 										<span>Time:</span>
