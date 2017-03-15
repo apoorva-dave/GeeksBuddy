@@ -288,3 +288,22 @@ li.header-tabs > a{
 .tricol-body a:hover{
     text-decoration: none;
 }
+
+/*Questions Page*/
+.questions{
+    list-style: none;
+}
+
+.q-number{
+    float: left;
+    margin-right: 15px;
+}
+.q{
+    overflow: auto;
+    font-weight: bold;
+}
+.options-wrapper{
+    overflow: auto;
+    padding-left: 20px;
+    margin-top: 5px;
+}

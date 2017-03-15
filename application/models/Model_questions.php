@@ -7,7 +7,7 @@ class Model_questions extends CI_Model
 		if (!$category_slug) {
 			return null;		
 		}
-		$this->db->select('question');
+		$this->db->select('*');
 		$this->db->where('category_slug',$category_slug);
 		$query=$this->db->get('objective_questions');
 		return $query->result();
