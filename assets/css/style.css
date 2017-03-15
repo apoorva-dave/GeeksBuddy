@@ -333,7 +333,7 @@ li.header-tabs > a{
     float: left;
     padding: 7px;
 }
-.test-li a{
+.test-li button{
     margin: 7px;
 }
 /*Take Test Page Ends*/
