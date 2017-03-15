@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo base_url() ?>index.php/Home">GeeksBuddy</a>
+      <a class="navbar-brand" href="<?php echo base_url() ?>">GeeksBuddy</a>
 	</div>
   
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="header-tabs"><a href="<?php echo base_url() ?>index.php/Home">Home</a></li>
+        <li class="header-tabs"><a href="<?php echo base_url() ?>">Home</a></li>
         <li>
           <div class="dropdown">
             <button class="dropbtn">Company Wise</button>
@@ -35,17 +35,17 @@
           <div class="dropdown">
             <button class="dropbtn">Questions</button>
             <div class="dropdown-content">
-            <a href="<?php echo base_url()?>index.php/Aptitude">Aptitude &amp; Coding</a>
+            <a href="<?php echo base_url()?>/Aptitude">Aptitude &amp; Coding</a>
             </div>
           </div>
         </li>
         <?php if (!($this->session->userdata('is_logged_in'))) { ?>
-          <li class="header-tabs"><a href="<?php echo base_url() ?>index.php/Login">Login</a></li>
-          <li class="header-tabs"><a href="<?php echo base_url()?>index.php/Register"> Register</a></li>
+          <li class="header-tabs"><a href="<?php echo base_url() ?>Login">Login</a></li>
+          <li class="header-tabs"><a href="<?php echo base_url()?>Register"> Register</a></li>
         <?php } ?>
-
+          <li class="header-tabs"><a href="<?php echo base_url() ?>test">Take Test</a></li>
         <?php if ($this->session->userdata('is_logged_in')) { ?>
-          <li class="header-tabs action="<?php echo base_url()?>index.php/login/logout"><a href="<?php echo base_url()?>index.php/Login/logout"> Logout</a></li>
+          <li class="header-tabs action="<?php echo base_url()?>/login/logout"><a href="<?php echo base_url()?>/Login/logout"> Logout</a></li>
         <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
