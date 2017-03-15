@@ -16,8 +16,8 @@
 		    	
 				<ol>
 					<div class="col-md-4">
-						<li><a href="<?php echo base_url() ?>/questions/company/algebraic-expressions">Oracle</a></li>
-				        <li><a href="<?php echo base_url() ?>/questions/company/speed-and-boat">UHG</a></li>
+						<li><a href="<?php echo base_url() ?>questions/company/oracle">Oracle</a></li>
+				        <li><a href="<?php echo base_url() ?>questions/company/UHG">UHG</a></li>
 					</div>
 					<div class="col-md-4">
 				        <li><a href="#">CA Technologies</a></li>
