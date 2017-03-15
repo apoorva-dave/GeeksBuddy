@@ -17,7 +17,7 @@ class Model_questions extends CI_Model
 		$this->db->where('category_slug',$category_slug);
 		$query_2 = $this->db->count_all_results('objective_questions');
 		$data['questions'] =  $query_1->result();
-		$data['no_of_pages'] =  $query_2;
+		$data['no_of_pages'] =  $query_2/ $per_page; // toal rows / no_of_ques per page!
 		return $data;
 	}
 
