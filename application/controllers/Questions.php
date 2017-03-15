@@ -2,10 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Questions extends CI_Controller {
-
-	public function index($category_slug = null)
+public function index()
 	{
-		redirect('Aptitude');
+		//$this->load->view('questions/view');
 	}
 
 	public function view($category_slug = null)

@@ -8,8 +8,21 @@
 <body>
 	<?php include __DIR__."/../includes/header.php" ?>
 	<div class="container">
-		<?php var_dump($questions); ?>
-	</div>
+		 <!-- var_dump($questions); -->
+		<?php 
+		$i=1;
+		foreach($questions as $row)
+		{?>
+		<ul>
+			<h4>
+			  <?php echo ("Q.$i ");
+			  echo $row->question?>
+			</h4>
+		</ul>
+		<?php $i++;}
+		 ?>
+
+		</div>
 	<?php include __DIR__."/../includes/footer.php" ?>
 </body>
 </html>

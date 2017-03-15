@@ -18,8 +18,8 @@
 			<h4>Quantitative Aptitude</h4>
 			<ul>
 				<div class="col-md-4">
-					<li><a href="#">Number System</a></li>
-					<li><a href="#">Speed and Distance</a></li>
+				<li><a href="<?php echo base_url() ?>index.php/questions/view/algebraic-expressions">Algebra</a></li>
+					<li><a href="<?php echo base_url() ?>index.php/questions/view/speed-and-boat">Speed and Distance</a></li>
 					<li><a href="#">Boats and Streams</a></li>
 				</div>
 				<div class="col-md-4">
