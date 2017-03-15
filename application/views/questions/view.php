@@ -8,11 +8,16 @@
 <body>
 	<?php include __DIR__."/../includes/header.php" ?>
 	<div class="container">
-		<ul class="questions">
-			<?php $i=1; foreach($questions as $question){ ?>
+		<h2><?php echo $category_name; ?></h2>
+		<ul class="questions"> 
+			<?php $i=1; 
+			// echo $questions->category_slug;
+			
+			foreach($questions as $question){ 
+				?>
 				<li class="question-wrapper">
 					<div class="q">
-						<span class="q-number"><?php echo ("Q.$i ") ?></span>
+						<span class="q-number"><?php echo ("Q.$question->id ") ?></span>
 						<?php echo $question->question; ?>
 					</div>
 					<div class="options-wrapper">
@@ -21,11 +26,55 @@
 						<p>3. <?php echo $question->option3; ?></p>
 						<p>4. <?php echo $question->option4; ?></p>
 					</div>
+					<div class="answer" style="display: none" id="showRightOption<?php echo $question->id; ?>">
+						<?php						
+						 echo $question->right_option; ?>
+					</div>
 				</li>
-			<?php $i++; } ?>
+			<?php $i++;?> 
+			<div class= "btn-sharp">
+				<button onclick=showAnswer("showRightOption<?php echo $question->id; ?>") type="button" class="btn btn-success" id ="show">Show/Hide Answer</button>
+			</div>
+			<?php
+			} ?>
 		</ul>	
-
+		<nav aria-label="Page navigation">
+		  <ul class="pagination">
+		    <li>
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <?php for ($i=1; $i <= $no_of_pages; $i++) { ?>
+			    <li>
+			    	<a href="<?php echo base_url() ?>Questions/view/<?php echo $category_slug ?>/<?php echo $i ?>">
+			    <?php echo $i ?>
+			    	
+			    </a></li>
+		    <?php } ?>
+		    <li>
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
 	</div>
 	<?php include __DIR__."/../includes/footer.php" ?>
+<script>
+
+	function showAnswer(showAnsDiv) {
+		console.log(showAnsDiv);
+		var x = document.getElementById(showAnsDiv);
+	    console.log(x);
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+				        
+	    } else {
+	        x.style.display = 'none';
+	    }
+	    
+	}
+</script>
 </body>
 </html>
