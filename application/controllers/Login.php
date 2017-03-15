@@ -18,13 +18,16 @@ class Login extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index($data=null)
+	public function index()
 	{
-		$this->load->view('login/login',$data);
+		$this->load->view('login/login');
 	}
 	public function loginSubmit()
 	{
+		// var_dump($_POST);
+		// die();
 		// Ye hui apni form validation library
+		$this->load->library('session');
 		$this->load->library('form_validation');
 		
 		// Form validation Rules
@@ -41,25 +44,28 @@ class Login extends CI_Controller {
 
 			$email = $this->input->post('email');
 			$password = $this->input->post('password');
-
+				$data  = array(
+				'email' => $email,
+				'password' => $password,
+				);
 			if($this->Model_users->isValidPassword($email, $password)){
+				//var_dump($data);
 				$this->session->set_userdata('is_logged_in', $email);
-				redirect('Aptitude');
+				
+				$this->load->view('aptitude/aptitude');
 			}else{
-				$data['error'] = true;
+				
 				$data['error_msg'] = "You have entered wrong Email/password!";
-				$this->index($data);
+				$this->load->view('login/login', $data);	
 			}
 		}else{
-				$data['error'] = true;
-				$data['error_msg'] = form_error('email')." ".form_error('password');	
-				$this->index($data);
+				$data['errors'] = validation_errors(); 
+				 $this->load->view('login/login', $data);	
 		}
 	}
-
-	// public function logout()
-	// {
-	// 	$this->session->set_userdata('is_logged_in', null);
-	// 	redirect('Login');
-	// }
+	public function logout()
+	{
+		$this->session->set_userdata('is_logged_in', null);
+		redirect('login');
+	}
 }
