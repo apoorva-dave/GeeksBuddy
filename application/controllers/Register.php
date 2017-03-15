@@ -33,7 +33,8 @@ class Register extends CI_Controller {
 		// Form validation Rules
 		$this->form_validation->set_rules('password','Password','required|trim');
 		$this->form_validation->set_rules('name','Name','required|trim');
-		$this->form_validation->set_rules('email','Email','required|trim|valid_email');
+		$this->form_validation->set_rules('email','Email','required|trim|valid_email|is_unique[users.email]',
+			array('is_unique' => 'This email is already registered!'));
 		//  Agar from validation successfulyy ho jaa rha toh..
 		if ($this->form_validation->run()) {
 
@@ -57,14 +58,18 @@ class Register extends CI_Controller {
 
 			if($this->Model_users->insert_user($user_data)){
 				//echo "inserted!";
-				
-				die();
+				$this->load->view('register/register-success');
+			}else{
+				// Insertion failed
+				$this->load->view('register/register-failed');
 			}
 			
 		}else{
-				$data['error'] = true;
-				$data['error_msg'] = form_error('email')." ".form_error('password');	
-				$this->index($data);
+				// Therse are validation errors, go back to the form and show them
+				
+				// echo validation_errors();
+				 $data['errors'] = validation_errors(); 
+				 $this->load->view('register/register', $data);	
 		}
 	}
 

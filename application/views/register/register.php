@@ -17,6 +17,14 @@
 	<div class="panel panel-default">
 	 	<div class="panel-body">
 	 	    <form class="form-horizontal" method="post"action= "<?php echo base_url() ?>index.php/register/registerSubmit">
+	 	    <!-- yahan errps vala var kese aaega -->
+	 	    	<p><?php if(@$errors){?>
+	 	    			   <div class="alert alert-danger" role="alert">
+	 	    			   	<?php echo validation_errors();?>
+	 	    			   </div>
+	 	    			   <?php
+	 	    		} ?>   			
+	 	    		</p>
 	 	    	<div class="form-group">
 				<br>
 				

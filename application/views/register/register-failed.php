@@ -11,8 +11,8 @@
 <div class="container">
 	<div class="text-center">
 	<!-- Bhar do taarifein! :PAll yours! -->
-	<h3>Registered at GeeksBuddy</h3>
-	<p>You have been successfully registered at GeeksBuddy</p>
+	<h3>Registration Failed!</h3>
+	<p>We are sorry! there was an error. Please try again later.</p>
 </div>	
 
 <?php include  __DIR__."/../includes/footer.php" ?>

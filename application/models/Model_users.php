@@ -31,6 +31,7 @@ class Model_users extends CI_Model
 				$hash =  $result[0]->password;
 
 				if($hash == crypt($password,$hash)){
+		
 					return true;
 					// user has entered a valid password and email combination
 				}else{
