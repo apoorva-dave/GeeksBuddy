@@ -307,3 +307,33 @@ li.header-tabs > a{
     padding-left: 20px;
     margin-top: 5px;
 }
+/*Take Test Page*/
+.test-li{
+    padding: 10px 0;
+    overflow: auto; 
+}
+
+.test-li .q-text{
+    padding: 10px 10px;
+}
+.test ul li:nth-child(odd){
+    padding: 10px 0;
+    background-color: #e4e4e4;
+}
+.no-of-questions, .time{
+    float: left;
+    margin-right: 20px;
+    padding: 5px 0;
+}
+.test-li .form-control{
+    float: left;
+    width: auto;
+}
+.no-of-questions span, .time span{
+    float: left;
+    padding: 7px;
+}
+.test-li a{
+    margin: 7px;
+}
+/*Take Test Page Ends*/
