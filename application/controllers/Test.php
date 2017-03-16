@@ -14,7 +14,7 @@ class Test extends CI_Controller {
 			redirect('test');
 		}
 
-		$questions = $this->input->get('no_of_ques');
+		$no_of_ques = $this->input->get('no_of_ques');
 		$time = $this->input->get('time');
 		
 		// TODO: Validate the input beofre processing;
@@ -25,11 +25,16 @@ class Test extends CI_Controller {
 		// After that return all the questions only to the user.
 		$data = array(
 			'time' => $time, 
-			'questions' => $questions, 
+			'no_of_ques' => $no_of_ques, 
 			'category_slug' => $category_slug 
 			);
 		// Test interface will be single page and without reloads! page will only reload if the user has completed the test!
 		$this->load->view('test/instructions', $data);
+	}
+
+	public function start($category_slug = "")
+	{
+		
 	}
 
 

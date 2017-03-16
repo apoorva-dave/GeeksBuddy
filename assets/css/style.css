@@ -338,6 +338,18 @@ li.header-tabs > a{
 }
 /*Take Test Page Ends*/
 
+/*Test Instructions*/
+.test-instructions .panel{
+    margin-top: 30px;
+}
+.test-instructions .panel-title{
+    font-size: 1.5em;
+}
+.test-instructions h3{
+    font-size: 1.3em;
+}
+/*Test Instructions End*/
+
 
 .view-companies li,h3{
     margin-bottom: 20px;
