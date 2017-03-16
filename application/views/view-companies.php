@@ -15,8 +15,16 @@
 	  		<div class="panel-body">
 		    	
 				<ol>
-					<div class="col-md-4">
-						<li><a href="<?php echo base_url() ?>questions/company/oracle">Oracle</a></li>
+				<?php foreach ($companies as $company) { ?>
+
+					<li>
+					<a href="<?php echo base_url() ?>questions/company/<?php echo $company->company_slug; ?>">
+						<?php echo $company->name ?>		
+					</a>
+					</li>
+				<?php } ?>
+					
+					<!-- <div class="col-md-4">
 				        <li><a href="<?php echo base_url() ?>questions/company/UHG">UHG</a></li>
 					</div>
 					<div class="col-md-4">
@@ -26,7 +34,7 @@
 					<div class="col-md-4">
 						<li><a href="#">Capegemini</a></li>
 						<li><a href="#">Samsung</a></li>
-					</div>
+					</div> -->
 				</ol>
 			</div>
 		</div>

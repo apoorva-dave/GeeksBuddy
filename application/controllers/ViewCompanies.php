@@ -20,6 +20,10 @@ class ViewCompanies extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('view-companies');
+		$this->load->model('Model_questions');
+		$data['companies'] = $this->Model_questions->getAllCompanies();
+
+		$this->load->view('view-companies', $data);
+
 	}
 }

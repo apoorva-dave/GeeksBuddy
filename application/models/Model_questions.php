@@ -29,6 +29,14 @@ class Model_questions extends CI_Model
 
 	}
 
+	public function getAllCompanies()
+	{
+		$this->db->select('name, company_slug, id');
+		$query = $this->db->get('companies');
+		$companies = $query->result();
+		return $companies;
+	}
+
 	public function getQuestionsbyCategory($category_slug, $page = 1, $per_page)
 	{
 		if (!$category_slug) {

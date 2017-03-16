@@ -21,8 +21,8 @@
             <button class="dropbtn">Company Wise</button>
             <div class="dropdown-content">
                 <a href="<?php echo base_url() ?>questions/company/oracle">Oracle</a>
-                <a href="<?php echo base_url() ?>questions/company/UHG">UHG</a>
-                <a href="#">CA Technologies</a>
+                <a href="<?php echo base_url() ?>questions/company/uhg">UHG</a>
+                <a href="<?php echo base_url() ?>questions/company/ca-tech">CA Technologies</a>
                 <a href="<?php echo base_url() ?>ViewCompanies">View-All</a>
                 
 
