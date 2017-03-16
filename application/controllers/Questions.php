@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Questions extends CI_Controller {
-	private $per_page = 1;
+	private $per_page = 10;
 public function index()
 	{
 		//$this->load->view('questions/view');

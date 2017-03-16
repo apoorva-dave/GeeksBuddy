@@ -17,7 +17,7 @@
 				?>
 				<li class="question-wrapper">
 					<div class="q">
-						<span class="q-number"><?php echo ("Q.$question->id ") ?></span>
+						<span class="q-number"><?php echo ("Q. "). ($i + ($page * $per_page))."." ?></span>
 						<?php echo $question->question; ?>
 					</div>
 					<div class="options-wrapper">
