@@ -34,8 +34,9 @@ class Test extends CI_Controller {
 
 	public function start($category_slug = "")
 	{
-		// TODO prevent starting if not logged in
-		
+		if(!$this->session->userdata('is_logged_in')){
+			redirect('login');
+		}
 		if(!$category_slug || $category_slug ==""){
 			redirect('test');
 		}
@@ -47,6 +48,23 @@ class Test extends CI_Controller {
 
 		$data = $this->Model_test->createTest($category_slug, $time, $no_of_ques);
 		
+		// Save the test data in session variable
+		$this->session->set_userdata('test_data', $data);
+		
+		redirect('Test/test_page');
+	}
+
+
+	public function test_page()
+	{
+		if(!$this->session->userdata('is_logged_in')){
+			redirect('login');
+		}
+
+		if(!$this->session->userdata('test_data')){
+			redirect('test');
+		}
+		$data = $this->session->userdata('test_data');
 		$this->load->view('test/start-test.php', $data);
 	}
 
