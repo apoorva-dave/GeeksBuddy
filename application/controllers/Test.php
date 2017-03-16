@@ -34,7 +34,20 @@ class Test extends CI_Controller {
 
 	public function start($category_slug = "")
 	{
+		// TODO prevent starting if not logged in
 		
+		if(!$category_slug || $category_slug ==""){
+			redirect('test');
+		}
+
+		$no_of_ques = $this->input->get('no_of_ques');
+		$time = $this->input->get('time');
+		
+		$this->load->model('Model_test');
+
+		$data = $this->Model_test->createTest($category_slug, $time, $no_of_ques);
+		
+		$this->load->view('test/start-test.php', $data);
 	}
 
 
