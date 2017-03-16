@@ -20,6 +20,10 @@ class Aptitude extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('aptitude/aptitude');
+		
+		$this->load->model('Model_questions');
+		$data['overall_categories'] = $this->Model_questions->getOverallCategoryCategories();
+		$this->load->view('aptitude/aptitude', $data);
+
 	}
 }
