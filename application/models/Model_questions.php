@@ -66,13 +66,13 @@ class Model_questions extends CI_Model
 			return null;		
 		}
 		$this->db->select('*');
-		$this->db->where('company_slug',$company_slug);
+		$this->db->where('companies_slug',$company_slug);
 		$this->db->limit($per_page, ($page - 1) * $per_page);
 		$query_1 = $this->db->get('objective_questions');
 		// Apart from rsults, we need ki kitne no of pages hain toal! 
 		//qki apanko wahan dikhana hai!
 		
-		$this->db->where('company_slug',$company_slug);
+		$this->db->where('companies_slug',$company_slug);
 		$query_2 = $this->db->count_all_results('objective_questions');
 		$data['questions'] =  $query_1->result();
 		$data['no_of_pages'] =  $query_2/ $per_page; // toal rows / no_of_ques per page!
