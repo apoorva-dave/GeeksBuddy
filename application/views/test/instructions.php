@@ -34,7 +34,7 @@
 			<h4 class="text-center">All the best!</h4>
 			<hr>
 			<div class="div text-center">
-				<a href="<?php echo base_url() ?>test/start_test/<?php echo $category_slug ?>?time=<?php echo $time ?>&no_of_ques=<?php echo $no_of_ques ?>" class="btn btn-success btn-lg">START TEST</a>
+				<a href="<?php echo base_url() ?>test/start/<?php echo $category_slug ?>?time=<?php echo $time ?>&no_of_ques=<?php echo $no_of_ques ?>" class="btn btn-success btn-lg">START TEST</a>
 			</div>
 		  </div>
 		</div>
