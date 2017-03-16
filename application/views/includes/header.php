@@ -33,7 +33,7 @@
           <div class="dropdown">
             <button class="dropbtn">Questions</button>
             <div class="dropdown-content">
-            <a href="<?php echo base_url()?>/Aptitude">Aptitude &amp; Coding</a>
+            <a href="<?php echo base_url()?>Aptitude">Aptitude &amp; Coding</a>
             </div>
           </div>
         </li>
@@ -43,7 +43,7 @@
         <?php } ?>
           <li class="header-tabs"><a href="<?php echo base_url() ?>test">Take Test</a></li>
         <?php if ($this->session->userdata('is_logged_in')) { ?>
-          <li class="header-tabs action="<?php echo base_url()?>/login/logout"><a href="<?php echo base_url()?>/Login/logout"> Logout</a></li>
+          <li class="header-tabs action="<?php echo base_url()?>login/logout"><a href="<?php echo base_url()?>Login/logout"> Logout</a></li>
         <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
