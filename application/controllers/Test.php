@@ -6,8 +6,8 @@ class Test extends CI_Controller {
 	public function index()
 	{
 		// Show available tests from the database!
-		$this->load->model('Model_questions');
-		$data['overall_categories'] = $this->Model_questions->getOverallCategoryCategories();
+		$this->load->model('Model_test');
+		$data['overall_categories'] = $this->Model_test->getOverallcategories();
 
 		$this->load->view('test/available-tests.php', $data);
 	}

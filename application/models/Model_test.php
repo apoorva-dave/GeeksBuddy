@@ -2,6 +2,15 @@
 
 class Model_test extends CI_Model
 {
+	public function getOverallcategories()
+	{
+		// Fetch overall categories
+		$this->db->select('name, slug, category_ids');
+		$query = $this->db->get('overall_categories');
+
+		return $query->result();
+	}
+
 	public function createTest($category_slug, $time, $no_of_ques)
 	{
 		$data = $this->getQuestions($category_slug, $no_of_ques);

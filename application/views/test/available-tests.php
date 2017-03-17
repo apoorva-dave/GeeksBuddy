@@ -16,41 +16,36 @@
 		    	<h3 class="panel-title text-center">Aptitude Tests</h3>
 		  	</div>
 	  		<div class="panel-body">
-				<?php foreach ($overall_categories as $overall_category) { ?>
-		    		<div>
-						<h4><?php echo $overall_category->name; ?></h4>
-						<ul>
-							<?php foreach ($overall_category->categories as $category) { ?>
-							<li class="test-li">
-								<div class="col-md-6 q-text">
-									<a href="<?php echo base_url() ?>questions/view/<?php echo $category->category_slug; ?>"><?php echo $category->name; ?></a>
-								</div>
-								<form action="<?php echo base_url() ?>test/instructions/<?php echo $category->category_slug; ?>">
-									<div class="col-md-6">
-										<div class="time">
-											<span>Time:</span>
-											<select class="form-control" name="time" id="">
-												<option value="10">10 min</option>
-												<option value="20">20 min</option>
-												<option value="30">30 min</option>
-											</select>
-										</div>
-										<div class="no-of-questions">
-											<span>Questions:</span>
-											<select class="form-control" name="no_of_ques" id="">
-												<option value="10">10</option>
-												<option value="20">20</option>
-												<option value="30">30</option>
-											</select>
-										</div>
-										<button type="submit" class="btn btn-sm btn-default">Take Test</button>
+				<ul>
+					<?php foreach ($overall_categories as $overall_category) { ?>
+						<li class="test-li">
+							<div class="col-md-6 q-text">
+								<a href="<?php echo base_url() ?>questions"><?php echo $overall_category->name; ?></a>
+							</div>
+							<form action="<?php echo base_url() ?>test/instructions/<?php echo $overall_category->slug; ?>">
+								<div class="col-md-6">
+									<div class="time">
+										<span>Time:</span>
+										<select class="form-control" name="time" id="">
+											<option value="10">10 min</option>
+											<option value="20">20 min</option>
+											<option value="30">30 min</option>
+										</select>
 									</div>
-								</form>
-							</li>
-							<?php } ?>
-						</ul>	
-					</div>
-				<?php } ?>
+									<div class="no-of-questions">
+										<span>Questions:</span>
+										<select class="form-control" name="no_of_ques" id="">
+											<option value="10">10</option>
+											<option value="20">20</option>
+											<option value="30">30</option>
+										</select>
+									</div>
+									<button type="submit" class="btn btn-sm btn-default">Take Test</button>
+								</div>
+							</form>
+						</li>
+					<?php } ?>
+				</ul>	
 			</div>
 		</div>
 		<div class="panel question-categories panel-success">
