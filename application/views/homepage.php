@@ -18,8 +18,8 @@
 				<h3>Best Exam Preparation for you!</h3>
 				<p>Boost your placement exam preparation with GeeksBuddy to get the best jobs in India.</p>
 				<div class="hero-buttons">
-					<a class="btn btn-sharp" href="">Aptitude Questions</a>
-					<a class="btn btn-sharp" href="">Coding Questions</a>
+					<a class="btn btn-sharp" href="<?php echo base_url() ?>Aptitude">Aptitude Questions</a>
+					<a class="btn btn-sharp" href="<?php echo base_url() ?>Coding">Coding Questions</a>
 				</div>
 			</div>
 		</div>
