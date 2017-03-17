@@ -5,7 +5,11 @@ class Test extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('test/available-tests.php');
+		// Show available tests from the database!
+		$this->load->model('Model_questions');
+		$data['overall_categories'] = $this->Model_questions->getOverallCategoryCategories();
+
+		$this->load->view('test/available-tests.php', $data);
 	}
 
 	public function instructions($category_slug = null)
