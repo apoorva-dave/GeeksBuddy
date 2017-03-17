@@ -64,14 +64,17 @@
 	  				<div class="panel-body">
 						<div class="tricol-body">
 							<ul>
-								<a href="#"><li>Oracle</li></a>
-								<a href="#"><li>UHG</li></a>
-								<a href="#"><li>CA Technologies</li></a>
-								<a href="#"><li>MU Sigma</li></a>
-								<a href="#"><li>Capegemini</li></a>
-								<a href="#"><li>Adobe</li></a>
-								<a href="#"><li>Sapient</li></a>
-
+								<a href="<?php echo base_url() ?>questions/company/oracle"><li>Oracle</li></a>
+								<a href="<?php echo base_url() ?>questions/company/uhg"><li>UHG</li></a>
+								<a href="<?php echo base_url() ?>questions/company/ca-tech"><li>CA Technologies</li></a>
+								<a href="<?php echo base_url() ?>questions/company/mu-sigma"><li>MU Sigma</li></a>
+								<a href="<?php echo base_url() ?>questions/company/capegemini"><li>Capegemini</li></a>
+								<a href="<?php echo base_url() ?>questions/company/adobe"><li>Adobe</li></a>
+								<a href="<?php echo base_url() ?>questions/company/sapient"><li>Sapient</li></a>
+								<a href="<?php echo base_url() ?>questions/company/samsung"><li>Samsung</li></a>
+								<a href="<?php echo base_url() ?>questions/company/power2sme"><li>Power2SME</li></a>
+								<a href="<?php echo base_url() ?>questions/company/infoedge"><li>Infoedge</li></a>
+								<a href="<?php echo base_url() ?>questions/company/tcs"><li>TCS</li></a>
 							</ul>
 						</div>
 					</div>
@@ -83,27 +86,24 @@
   				<div class="panel-body">
 					<div class="tricol-body">
 						<ul>
-							<a href="#"><li>Number System</li></a>
-							<a href="#"><li>Speed and Distance</li></a>
-							<a href="#"><li>Boats and Streams</li></a>
-							<a href="#"><li>Profit and Loss</li></a>
-							<a href="#"><li>Averages and Mixtures</li></a>
-							<a href="#"><li>Ratio and Proportion</li></a>
-							<a href="#"><li>Simple and Compund Interest</li></a>
-							<a href="#"><li>Height and Distance</li></a>
-							<a href="#"><li>Probability</li></a>
-							<a href="#"><li>Grammar</li>
-							<a href="#"><li>Synonyms and Antonyms</li></a>
-							<a href="#"><li>Error Correction</li></a>
-							<a href="#"><li>Idioms and Phrases</li></a>
-							<a href="#"><li>Comprehension</li></a>
-							<a href="#"><li>Fill in the blanks</li></a>
+							<a href="<?php echo base_url() ?>questions/view/problems-on-trains"><li>Problems on Trains</li></a>
+							<a href="<?php echo base_url() ?>questions/view/time-and-distance"><li>Time and Distance</li></a>
+							<a href="<?php echo base_url() ?>questions/view/simple-interest"><li>Simple Interest</li></a>
+							<a href="<?php echo base_url() ?>questions/view/average"><li>Averages and Mixtures</li></a>
+							<a href="<?php echo base_url() ?>questions/view/ratio-and-proportion"><li>Ratio and Proportion</li></a>
+							<a href="<?php echo base_url() ?>questions/view/height-and-distance"><li>Height and Distance</li></a>
+							<a href="<?php echo base_url() ?>questions/view/probability"><li>Probability</li></a>
+							<a href="<?php echo base_url() ?>questions/view/antonyms"><li>Antonyms</li></a>
+							<a href="<?php echo base_url() ?>questions/view/synonyms"><li>Synonyms</li></a>
+							<a href="<?php echo base_url() ?>questions/view/idioms-and-phrases"><li>Idioms and Phrases</li></a><!-- 
+							<a href="<?php echo base_url() ?>questions/view/comprehension"><li>Comprehension</li></a> -->
+							<!-- <a href="#"><li>Fill in the blanks</li></a>
 							<a href="#"><li>Cubes and Dices</li></a>
 							<a href="#"><li>Puzzles</li></a>
 							<a href="#"><li>Direction and Senses</li></a>
-							<a href="#"><li>Statements and Assumptions</li></a>
+							<a href="#"><li>Statements and Assumptions</li></a> --><!-- 
 							<a href="#"><li>Logical Deductions</li></a>
-							<a href="#"><li>Blood Relations</li></a>
+							<a href="#"><li>Blood Relations</li></a> -->
 						</ul>
 					</div>
 				</div>
@@ -115,12 +115,20 @@
   				<div class="panel-body">
 					<div class="tricol-body">
 						<ul>
-							<a href="#"><li>Arrays</li></a>
+							<a href="<?php echo base_url() ?>questions/view/computer-fundamentals"><li>Computer Fundamentals</li></a>
+							<a href="<?php echo base_url() ?>questions/view/operating-system-concepts"><li>Operating System Concepts</li></a>
+							<a href="<?php echo base_url() ?>questions/view/linux"><li>Linux</li></a>
+							<a href="<?php echo base_url() ?>questions/view/networking"><li>Networking</li></a>
+							<a href="<?php echo base_url() ?>questions/view/database-systems"><li>Database Systems</li></a>
+							<a href="<?php echo base_url() ?>questions/view/artificial-intelligence"><li>Artificial Intelligence</li></a>
+							<a href="<?php echo base_url() ?>questions/view/computer-hardware"><li>Computer Hardware</li></a>
+							<a href="<?php echo base_url() ?>questions/view/unix"><li>Unix</li></a>
+							<!-- <a href="#"><li>Arrays</li></a>
 							<a href="#"><li>Linked Lists</li></a>
 							<a href="#"><li>Strings</li></a>
 							<a href="#"><li>Trees</li></a>
 							<a href="#"><li>Stacks and Queues</li></a>
-							<a href="#"><li>Miscellaneous</li></a>
+							<a href="#"><li>Miscellaneous</li></a> -->
 						</ul>
 					</div>
 				</div>
