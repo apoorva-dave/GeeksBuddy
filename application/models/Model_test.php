@@ -13,7 +13,7 @@ class Model_test extends CI_Model
 
 	public function createTest($category_slug, $time, $no_of_ques)
 	{
-		$data = $this->getQuestions($category_slug, $no_of_ques);
+		$data['questions'] = $this->getQuestions($category_slug, $no_of_ques);
 		$data['time_alloted'] = $time;
 		$data['no_of_ques'] = $no_of_ques;
 
@@ -38,15 +38,31 @@ class Model_test extends CI_Model
 		return $data;
 	}
 
-	private function getQuestions($category_slug, $limit)
+	private function getQuestions($overall_category_slug, $limit)
 	{
+		// Fetch overall categories
+		$this->db->select('category_ids');
+		$this->db->where('slug', $overall_category_slug);
+		$query1 = $this->db->get('overall_categories');
+		$category_ids = explode(',', $query1->result()[0]->category_ids);
+
+		// Get category-slug
+		$this->db->select('category_slug');
+		$this->db->where_in('id', $category_ids);
+		$query2 = $this->db->get('category');
+		$categories = $query2->result();
+		$categories_slug =[];
+
+		foreach ($categories as $category) {
+			array_push($categories_slug, $category->category_slug);
+		}
+
 		$this->db->select('*');
-		$this->db->where('category_slug', $category_slug);
+		$this->db->where_in('category_slug', $categories_slug);
 		$this->db->order_by('id', 'RANDOM');
 		$this->db->limit($limit);
-		$query_1 = $this->db->get('objective_questions');
+		$query3 = $this->db->get('objective_questions');
 		
-		$data['questions'] =  $query_1->result();
-		return $data;
+		return $query3->result();
 	}
 }
