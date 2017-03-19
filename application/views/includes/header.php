@@ -33,7 +33,8 @@
           <div class="dropdown">
             <button class="dropbtn">Questions</button>
             <div class="dropdown-content">
-            <a href="<?php echo base_url()?>Aptitude">Aptitude &amp; Coding</a>
+            <a href="<?php echo base_url()?>Aptitude">Aptitude</a>
+            <a href="<?php echo base_url()?>Coding">Coding</a>
             </div>
           </div>
         </li>
