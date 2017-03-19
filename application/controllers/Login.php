@@ -49,10 +49,8 @@ class Login extends CI_Controller {
 				'password' => $password,
 				);
 			if($this->Model_users->isValidPassword($email, $password)){
-				//var_dump($data);
 				$this->session->set_userdata('is_logged_in', $email);
-				
-				$this->load->view('aptitude/aptitude');
+				redirect('aptitude');
 			}else{
 				
 				$data['error_msg'] = "You have entered wrong Email/password!";
