@@ -39,7 +39,9 @@ class Model_test extends CI_Model
 		$test_data['answered_questions'] = "";
 		// comma sperated values of answers which are answered
 		$test_data['answered_answers'] = "";
-
+		// data to be returned to the frontend
+		$data['question_ids'] = json_encode($test_data['question_ids']);
+		
 		$test_data['question_ids'] = implode(",",$test_data['question_ids']);
 		$test_data['right_options'] = implode(",",$test_data['right_options']);
 
