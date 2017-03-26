@@ -5,7 +5,11 @@ class Test extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('test/available-tests.php');
+		// Show available tests from the database!
+		$this->load->model('Model_test');
+		$data['overall_categories'] = $this->Model_test->getOverallcategories();
+
+		$this->load->view('test/available-tests.php', $data);
 	}
 
 	public function instructions($category_slug = null)
@@ -32,12 +36,12 @@ class Test extends CI_Controller {
 		$this->load->view('test/instructions', $data);
 	}
 
-	public function start($category_slug = "")
+	public function start($overall_category_slug = "")
 	{
 		if(!$this->session->userdata('is_logged_in')){
 			redirect('login');
 		}
-		if(!$category_slug || $category_slug ==""){
+		if(!$overall_category_slug || $overall_category_slug ==""){
 			redirect('test');
 		}
 
@@ -46,7 +50,7 @@ class Test extends CI_Controller {
 		
 		$this->load->model('Model_test');
 
-		$data = $this->Model_test->createTest($category_slug, $time, $no_of_ques);
+		$data = $this->Model_test->createTest($overall_category_slug, $time, $no_of_ques);
 		
 		// Save the test data in session variable
 		$this->session->set_userdata('test_data', $data);
